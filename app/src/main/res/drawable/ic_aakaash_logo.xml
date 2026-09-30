@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <group
+        android:pivotX="24"
+        android:pivotY="24">
+        <!-- Outer thin atmospheric crescent arc -->
+        <path
+            android:pathData="M 12,20 A 13,13 0 1,1 24,37"
+            android:strokeColor="#6647D6FF"
+            android:strokeWidth="1.2"
+            android:strokeLineCap="round"
+            android:fillColor="#00000000" />
+            
+        <!-- Tilted orbital ellipse -->
+        <group
+            android:pivotX="24"
+            android:pivotY="24"
+            android:rotation="-26">
+            <path
+                android:pathData="M 11,24 A 13,6.5 0 1,0 37,24 A 13,6.5 0 1,0 11,24"
+                android:strokeColor="#00D2FF"
+                android:strokeWidth="1.8"
+                android:fillColor="#00000000" />
+                
+            <!-- Amber Solar Satellite Node -->
+            <path
+                android:pathData="M 33.5,24 m -2.2,0 a 2.2,2.2 0 1,0 4.4,0 a 2.2,2.2 0 1,0 -4.4,0"
+                android:fillColor="#FFB148" />
+        </group>
+
+        <!-- Central Telemetry Eye Ring -->
+        <path
+            android:pathData="M 24,24 m -6,0 a 6,6 0 1,0 12,0 a 6,6 0 1,0 -12,0"
+            android:fillColor="#001526"
+            android:strokeColor="#44E2CD"
+            android:strokeWidth="1.5" />
+
+        <!-- Inner Core Pupil Glowing Cyan -->
+        <path
+            android:pathData="M 24,24 m -3.2,0 a 3.2,3.2 0 1,0 6.4,0 a 3.2,3.2 0 1,0 -6.4,0"
+            android:fillColor="#00D2FF" />
+
+        <!-- Specular Highlight -->
+        <path
+            android:pathData="M 23,23 m -1,0 a 1,1 0 1,0 2,0 a 1,1 0 1,0 -2,0"
+            android:fillColor="#FFFFFF" />
+    </group>
+</vector>
